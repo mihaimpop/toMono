@@ -1,4 +1,3 @@
-chrome.browserAction.onClicked.addListener(function (tab) {
-  console.log("BACKGROUND");
+chrome.browserAction.onClicked.addListener((tab) => {
   chrome.tabs.executeScript(null, { file: "content.js" });
 });
