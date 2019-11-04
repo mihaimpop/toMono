@@ -1,6 +1,8 @@
 # toMono
 ## Chrome extension - switch to mono, stereo audio channel layout for a video ##
 
+![toMono cover](https://i.imgur.com/uwASh2P.png "toMono cover")
+
 This is an unpacked Google Chrome extension which:
   - creates an `AudioContext` with a single channel so that you can no longer be frustrated when a YouTube video plays in only one ear.
 

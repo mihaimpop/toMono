@@ -16,4 +16,9 @@ this.context = this.context || new AudioContext();
   this.mono ? this.context.destination.channelCount = 1 : this.context.destination.channelCount = maxChannelCount;
   audioElement.disconnect();
   audioElement.connect(this.context.destination);
+
+  chrome.runtime.sendMessage({
+    action: 'updateIcon',
+    value: this.mono
+  });
 })();
